@@ -6,6 +6,16 @@
   <title>Raíces Spa & Medicina Estética Medellín | Guayabal</title>
   <meta name="description" content="Raíces Spa & Medicina Estética en Guayabal, Medellín. Limpiezas faciales, armonización facial, toxina botulínica, masajes relajantes y tratamientos corporales. Agenda tu valoración gratuita: 316 6680120." />
   <meta name="robots" content="index, follow" />
+  
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L563872J0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3L563872J0');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
@@ -271,6 +281,8 @@
       .slide-cta-text h2 { font-size: 1rem; }
       .slider-dots { bottom: 60px; }
     }
+  
+
   </style>
 </head>
 <body>
@@ -529,15 +541,15 @@
     </div>
     <div>
       <div class="mapa-embed">
-        <span>🗺️</span>
+        <span style="font-size:2rem;">🗺️</span>
         <strong>Raíces Spa & Medicina Estética</strong>
         <span style="font-size:0.85rem;">Cra. 54 #4-37 · Guayabal, Medellín</span>
         <a href="https://maps.google.com/?q=Cra.+54+%234-37+Guayabal+Medellin" target="_blank" style="margin-top:0.8rem;background:var(--azul);color:#fff;padding:0.5rem 1.2rem;border-radius:50px;text-decoration:none;font-size:0.85rem;font-weight:700;">Ver en Google Maps →</a>
       </div>
       <div style="background:#fff;border-radius:var(--radio);padding:1.5rem;margin-top:1.5rem;box-shadow:var(--sombra);">
-        <h3 style="font-family:var(--font-titulo);font-size:1.4rem;color:var(--gris);margin-bottom:1rem;">Agenda tu cita</h3>
-        <p style="font-size:0.9rem;color:var(--gris-medio);margin-bottom:1.2rem;">La forma más rápida de reservar tu cita es por WhatsApp.</p>
-        <a href="https://wa.me/573166680120?text=Hola,%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20en%20Ra%C3%ADces%20Spa" target="_blank" style="display:block;text-align:center;background:var(--azul);color:#fff;padding:0.9rem;border-radius:var(--radio);text-decoration:none;font-weight:700;font-size:0.95rem;margin-bottom:0.75rem;">📅 Valoración gratuita (Medicina Estética)</a>
+        <h3 style="font-family:var(--font-titulo);font-size:1.4rem;color:var(--carbon);margin-bottom:1rem;">Agenda tu cita</h3>
+        <p style="font-size:0.9rem;color:var(--carbon-med);margin-bottom:1.2rem;">La forma más rápida de reservar tu cita es por WhatsApp.</p>
+        <a href="https://wa.me/573166680120?text=Hola,%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20en%20Ra%C3%ADces%20Spa" target="_blank" style="display:block;text-align:center;background:var(--azul-oscuro);color:#fff;padding:0.9rem;border-radius:var(--radio);text-decoration:none;font-weight:700;font-size:0.95rem;margin-bottom:0.75rem;">📅 Valoración gratuita (Medicina Estética)</a>
         <a href="https://wa.me/573166680120?text=Hola,%20quiero%20agendar%20un%20masaje%20o%20tratamiento%20facial" target="_blank" style="display:block;text-align:center;background:var(--azul-claro);color:#fff;padding:0.9rem;border-radius:var(--radio);text-decoration:none;font-weight:700;font-size:0.95rem;">✨ Agendar masaje o facial</a>
       </div>
     </div>
@@ -935,7 +947,10 @@
     location.reload();
   }
 
-  // ── Triple clic en footer logo abre el panel ──
+
+
+
+    // ── Triple clic en footer logo abre el panel ──
   let footerClicks = 0, footerTimer;
   document.addEventListener('DOMContentLoaded', () => {
     const footerLogo = document.querySelector('.footer-logo');
